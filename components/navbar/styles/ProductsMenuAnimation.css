@@ -1,0 +1,100 @@
+/*Products Menu Components Animation*/
+
+.products_menu:has(.menu_link:hover){
+    .menu_link:not(:hover){
+      opacity: 0.5;
+    }
+  }
+
+.products_menu .menu_link:hover .inner_circle {
+    animation: rotateLeft 0.5s forwards ease-in-out;
+    transform-origin: 50%;
+}
+@keyframes rotateLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+.products_menu .menu_link:not(:hover) .inner_circle {
+  animation: rotateRight 0.5s forwards ease-in-out;
+  transform-origin: 50%;
+}
+@keyframes rotateRight {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.products_menu .menu_link:hover .outer_circle {
+  animation: rotateLeftO 0.5s forwards ease-in-out;
+  transform-origin: 50%;
+}
+@keyframes rotateLeftO {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.products_menu .menu_link:not(:hover) .outer_circle {
+  animation: rotateRightO 0.5s forwards ease-in-out;
+  transform-origin: 50%;
+}
+@keyframes rotateRightO {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.products_menu:has(.menu_link:hover) .c1,
+.products_menu:has(.menu_link:hover) .c2 {
+  animation: float 0.5s forwards ease-in-out;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+
+.products_menu:has(.menu_link:hover) .c3 {
+  animation: float1 0.3s forwards ease-in-out;
+}
+@keyframes float1 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.products_menu .menu_link:not(:hover) .c1,
+.products_menu .menu_link:not(:hover) .c2,
+.products_menu .menu_link:not(:hover) .c3 {
+  animation: floatBack 0.3s forwards ease-in-out;
+}
+@keyframes floatBack {
+  0% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+

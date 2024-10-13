@@ -2,15 +2,34 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const ftRegolaNeueRegular = localFont({
+  src: "./fonts/FTRegolaNeue-Regular.otf",
+  variable: "--font-ft-regola-neue-regular",
+  weight: "400",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const ftRegolaNeueMedium = localFont({
+  src: "./fonts/FTRegolaNeue-Medium.otf",
+  variable: "--font-ft-regola-neue-medium",
+  weight: "500",
+});
+
+const ftRegolaNeueSemibold = localFont({
+  src: "./fonts/FTRegolaNeue-Semibold.otf",
+  variable: "--font-ft-regola-neue-semibold",
+  weight: "600"
+});
+
+const robotoMono = localFont({
+  src: "./fonts/RobotoMono-Regular.ttf",
+  variable: "--font-roboto-mono",
+  weight: "400",
+});
+
+const inter = localFont({
+  src: "./fonts/InterVariable.woff2",
+  variable: "--font-inter",
+  weight: "400 900",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${ftRegolaNeueMedium.variable} ${ftRegolaNeueRegular.variable} ${ftRegolaNeueSemibold.variable} ${robotoMono.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>
