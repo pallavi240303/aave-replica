@@ -10,7 +10,7 @@ function DeveloperMenuLinks() {
     >
       
         <div className="resource_menu pt-4">
-          <div className="grid grid-flow-col  auto-cols-max transition-all duration-300 ease-in-out rounded-lg hover:bg-tertiaryGray menu_link"
+          <div className="grid grid-flow-col  auto-cols-max transition-all duration-300 ease-in-out rounded-lg "
             
           >
             <a className=" flex items-center gap-x-3 relative z-0 rounded-lg py-2 px-2  w-full">
@@ -25,7 +25,7 @@ function DeveloperMenuLinks() {
               </div>
             </a>
           </div>
-          <div className="grid grid-flow-col auto-cols-max transition-all duration-300 ease-in-out rounded-lg hover:bg-tertiaryGray menu_link"
+          <div className="grid grid-flow-col auto-cols-max transition-all duration-300 ease-in-out rounded-lg "
             
           >
             <a className=" flex items-center gap-x-3 relative z-0 rounded-lg py-2 pl-2 pr-4  w-full">
@@ -40,7 +40,7 @@ function DeveloperMenuLinks() {
               </div>
             </a>
           </div>
-          <div className="grid grid-flow-col auto-cols-max transition-all duration-300 ease-in-out rounded-lg hover:bg-tertiaryGray menu_link"
+          <div className="grid grid-flow-col auto-cols-max transition-all duration-300 ease-in-out rounded-lg "
           >
             <a className=" flex items-center gap-x-3 relative z-0 rounded-lg py-2 pl-2 pr-4  w-full">
               <BugBountyIcon isHovered={true}/>
@@ -49,7 +49,7 @@ function DeveloperMenuLinks() {
                 Bug Bounty
                 </p>
                 <p className="text-sm font-normal leading-[150%] -tracking-[.09px] text-secondaryGray">
-                  
+                Report responsibly and get rewarded.
                 </p>
               </div>
             </a>

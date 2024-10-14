@@ -28,7 +28,11 @@ const config: Config = {
         ghoBgGreen: "var(--gho-bg-green)",
         appBgPurple: "var(--app-bg-purple)",
         iconPrimaryGray: "var(--icon-primary-gray)",
-        iconSecondaryGray: "var(--icon-secondary-gray)"
+        iconSecondaryGray: "var(--icon-secondary-gray)",
+        buttonBorderGray: "var(--button-border-gray)",
+      },
+      backgroundImage: {
+        'rainbow-background': 'conic-gradient(from 0deg at 50% 50%, #ff8947 0deg, #b5e7fa 124.43deg, #9896ff 179.13deg, #63bbb6 233.53deg, #ffd631 308.53deg, #ff8947 364.52deg)',
       },
       keyframes: {
         blink: {

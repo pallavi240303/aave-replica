@@ -13,12 +13,12 @@ function ResourcesMenu({ isSticky }: props) {
 
   return (
     <div
-      className={` absolute block left-[-120px] ${
+      className={` absolute block left-[-120px] transition-all duration-300 ease z-[100] bg-white ${
         isSticky ? "top-6" : "top-4"
       }  text-white rounded-xl bg-background `}
     >
-      <div className=" flex p-3 rounded-2xl border shadow-custom gap-2 ml-[-30px]">
-        <div className="resource_menu">
+      <div className=" flex p-3 rounded-2xl border shadow-custom gap-2 ml-[-30px] bg-white transition-all duration-300 ease-in-out">
+        <div className="transition-all duration-300 ease-in-out">
           <div className="grid grid-flow-col  auto-cols-max transition-all duration-300 ease-in-out rounded-lg hover:bg-tertiaryGray menu_link"
             onMouseEnter={() => setIsHovered("brand")}
             onMouseLeave={() => setIsHovered(null)}

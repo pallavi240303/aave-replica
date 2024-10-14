@@ -7,7 +7,7 @@ interface props{
 
 function ProductsMenu({isSticky}:props) {
   return (
-    <div className={` absolute block left-[-120px] ${isSticky? 'top-6' : 'top-4'}  text-white rounded-xl bg-background `}>
+    <div className={` absolute block left-[-120px] transition-all duration-300 ease ${isSticky? 'top-6' : 'top-4'}  text-white rounded-xl bg-background `}>
       <div className="p-3 rounded-2xl border shadow-custom ">
         <div className=" text-left products_menu">
           <a

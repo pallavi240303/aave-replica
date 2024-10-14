@@ -16,7 +16,7 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div
-      className={`flex sticky justify-between items-center max-w-[1082px] h-14 mx-auto px-6 bg-white md:px-12 transition-all duration-300 ease-in-out ${
+      className={`flex sticky justify-between items-center max-w-[1082px] z-[9999999] h-14 mx-auto px-6 bg-white md:px-12 transition-all duration-300 ease-in-out ${
         isSticky
           ? "top-0 shadow-custom "
           : isMobile
@@ -25,12 +25,12 @@ function Navbar() {
       }`}
     >
       <AaveLogo />
-      <div className="justify-between items-center hidden md:flex">
+      <div className="justify-between items-center hidden md:flex bg-white">
         <NavMenu isSticky={isSticky} />
         <Button />
       </div>
       <button
-        className={`md:hidden block before:content-[''] after:content-[''] duration-200 ease-in-out w-8 h-8 bg-none relative before:duration-200 after:duration-200 before:top-[32%] before:absolute before:left-[13%] before:right-[13%] before:h-0.5 before:bg-primaryGray after:bottom-[32%] after:absolute after:left-[13%] after:right-[13%] after:h-0.5 after:bg-primaryGray ${
+        className={`md:hidden block before:content-[''] after:content-[''] transition-all duration-200 ease-in-out w-8 h-8 bg-none relative before:duration-200 after:duration-200 before:top-[32%] before:absolute before:left-[13%] before:right-[13%] before:h-0.5 before:bg-primaryGray after:bottom-[32%] after:absolute after:left-[13%] after:right-[13%] after:h-0.5 after:bg-primaryGray  ${
           isMenuOpen
             ? "before:translate-y-[6px] before:rotate-45 after:-translate-y-[4px] after:-rotate-45 rotate-90"
             : ""
@@ -39,7 +39,7 @@ function Navbar() {
       ></button>
 
         {isMenuOpen && (
-          <div className="block md:hidden z-[99999] fixed inset-0 top-12 overflow-y-scroll  px-3 pt-6  bg-white duration-200 ease">
+          <div className="block md:hidden z-[99999] fixed inset-0 top-12 overflow-y-scroll  px-3 pt-6  bg-white transition-all duration-500 ease-in-out ">
             <ProductsMenuLinks/>
             <h2 className="text-primaryGray font-regola-medium text-lg pt-6">
               Resources

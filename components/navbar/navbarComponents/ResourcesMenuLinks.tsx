@@ -11,7 +11,7 @@ function ResourcesMenuLinks() {
     >
       
         <div className="resource_menu pt-4">
-          <div className="grid grid-flow-col  auto-cols-max transition-all duration-300 ease-in-out rounded-lg hover:bg-tertiaryGray menu_link"
+          <div className="grid grid-flow-col  auto-cols-max transition-all duration-300 ease-in-out rounded-lg "
             
           >
             <a className=" flex items-center gap-x-3 relative z-0 rounded-lg py-2   w-full">
@@ -26,7 +26,7 @@ function ResourcesMenuLinks() {
               </div>
             </a>
           </div>
-          <div className="grid grid-flow-col auto-cols-max transition-all duration-300 ease-in-out rounded-lg hover:bg-tertiaryGray menu_link"
+          <div className="grid grid-flow-col auto-cols-max transition-all duration-300 ease-in-out rounded-lg "
             
           >
             <a className=" flex items-center gap-x-3 relative z-0 rounded-lg py-2   w-full">
@@ -41,7 +41,7 @@ function ResourcesMenuLinks() {
               </div>
             </a>
           </div>
-          <div className="grid grid-flow-col auto-cols-max transition-all duration-300 ease-in-out rounded-lg hover:bg-tertiaryGray menu_link"
+          <div className="grid grid-flow-col auto-cols-max transition-all duration-300 ease-in-out rounded-lg "
           >
             <a className=" flex items-center gap-x-3 relative z-0 rounded-lg py-2  w-full">
               <HelpIcon isHovered={true}/>
@@ -55,7 +55,7 @@ function ResourcesMenuLinks() {
               </div>
             </a>
           </div>
-          <div className="grid grid-flow-col auto-cols-max transition-all duration-300 ease-in-out rounded-lg hover:bg-tertiaryGray menu_link"
+          <div className="grid grid-flow-col auto-cols-max transition-all duration-300 ease-in-out rounded-lg "
             
           >
             <a className=" flex items-center gap-x-3 relative z-0 rounded-lg py-2   w-full">
