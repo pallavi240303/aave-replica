@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
-import { motion, useMotionValue } from 'framer-motion';
+import { delay, motion, useMotionValue } from 'framer-motion';
 
 interface Props{
   stroke: string,
@@ -8,9 +8,10 @@ interface Props{
   outerRectColor: string,
   translateX : number,
   translateY : number,
+  delay :number
 }
 
-const RotatingBar: React.FC<Props> = ({stroke ,innerRectColor,outerRectColor,translateX = 0, translateY = 0 }) => {
+const RotatingBar: React.FC<Props> = ({stroke ,innerRectColor,outerRectColor,translateX = 0, translateY = 0 ,delay}) => {
   const rotation = useMotionValue(0);
   const velocityX = useMotionValue(0);
   const velocityY = useMotionValue(0);
@@ -62,8 +63,30 @@ const RotatingBar: React.FC<Props> = ({stroke ,innerRectColor,outerRectColor,tra
     return () => clearInterval(interval);
   }, [leaving, rotation, velocityX, velocityY]);
 
+  const y = {translateY};
+
+  const variants = {
+
+    hidden: {
+      translateY: 600,
+      opacity: 0,
+    },
+    visible: {
+      translateY: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        delay:delay,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
     <motion.g
+    variants={variants}
+    initial="hidden"
+      animate="visible"
       style={{
         originX: '50%',
         originY: '50%',
